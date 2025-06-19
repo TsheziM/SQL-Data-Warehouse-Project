@@ -1,6 +1,20 @@
 =========================================================================================================
-CREATING SILVER LAYER TABLES
+/*
+=======================================================================================================================================
+
+DDL Script: Create Silver Tables
+
+=======================================================================================================================================
+
+Script Object:
+    This script create tables in the silver schema, dropping tables if the exists.
+
+NB://
+    Run this script to re-define the ddl structure of silver tables.
+
+*/
 =========================================================================================================
+  
 --Create SQL DDL scripts for all the CSV files in both CRM and ERP systems according to naming conventions defined prior in a bronze layer
 --CRM Source System
 IF OBJECT_ID('silver.crm_cust_info','U') IS NOT NULL
