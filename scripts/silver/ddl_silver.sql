@@ -1,4 +1,3 @@
-=========================================================================================================
 /*
 =======================================================================================================================================
 
@@ -11,9 +10,9 @@ Script Object:
 
 NB://
     Run this script to re-define the ddl structure of silver tables.
-
-*/
 =========================================================================================================
+*/
+
   
 --Create SQL DDL scripts for all the CSV files in both CRM and ERP systems according to naming conventions defined prior in a bronze layer
 --CRM Source System
