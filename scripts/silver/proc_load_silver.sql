@@ -1,11 +1,20 @@
 /*
-=====================================================================================================
-STORED PROCEDURE FOR INSERTING DATA INTO SILVER LAYER
-=====================================================================================================
-NB://
 
-Running this script will erase all the available data in the tables
+==========================================================================================================
+
+Stored Procedure:Load Silver Layer (Bronze -> Silver)
+
+==========================================================================================================
+
+Script Objective:
+      This stored procedure loads data into silver schema from bronze schema.
+      It performs the following:
+                  Truncates the silver tables before loading.
+                  Then INSERT standardized data into silver tables
+      To execute the Stored Procedure:
+                                      EXEC bronze.load_bronze;
 */
+
 
 CREATE OR ALTER PROCEDURE silver.load_silver AS
 BEGIN
